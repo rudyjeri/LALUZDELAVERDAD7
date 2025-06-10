@@ -9,88 +9,87 @@
     <link rel="shortcut icon" href="./images/wwwws.png" type="image/x-icon">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/estilos.css">
-
     <meta name="theme-color" content="#2091F9">
 
-    
 </head>
 <body>
-
     <header class="hero hero-inicio">
         <nav class="nav container">
-            <div class="nav__logo">
-              <a href="index.html">
-                <img src="./images/la-luz-de-la-verdad-high-resolution-logo-transparent (6).png" alt="La Luz de la Verdad" class="nav__logo-img">
-              </a>
-            </div>
-        
-            <ul class="nav__link nav__link--menu">
-              <li class="nav__items">
-                <a href="index.html" class="nav__links">Inicio</a>
-              </li>
-        
-              <!-- Menú desplegable: Fe y Ciencia -->
-              <li class="nav__items nav__dropdown">
-                <a href="fe_y_ciencia.html" class="nav__links">Fe y Ciencia ▾</a>
-                <ul class="nav__submenu">
-                  <li><a href="creacion_fe_y_ciencia.html" class="nav__links">¿Creación o Evolución?</a></li>
-                  <li><a href="evidencias_diluvio.html" class="nav__links">Evidencias del Diluvio</a></li>
-                  <li><a href="biblia_dinosaurios.html" class="nav__links">La Biblia y los Dinosaurios</a></li>
-                  <li><a href="historicidad_biblia.html" class="nav__links">La Historicidad de la Biblia</a></li>
-                </ul>
-              </li>
-        
-              <!-- Menú desplegable: Doctrinas -->
-              <li class="nav__items nav__dropdown">
-                <a href="doctrinas.html" class="nav__links">Doctrinas ▾</a>
-                <ul class="nav__submenu">
-                  <li><a href="justificacion_fe.html" class="nav__links">Justificación por la Fe</a></li>
-                  <li><a href="deidad.html" class="nav__links">La Deidad</a></li>
-                  <li><a href="ley_de_dios.html" class="nav__links">La Ley de Dios</a></li>
-                  <li><a href="estado_muertos.html" class="nav__links">El Estado de los Muertos</a></li>
-                  <li><a href="santuario.html" class="nav__links">El Santuario</a></li>
-                  <li><a href="reforma_prosalud.html" class="nav__links">Reforma Prosalud</a></li>
-                  <li><a href="espiritu_profecia.html" class="nav__links">El Espíritu de Profecía</a></li>
-                </ul>
-              </li>
-        
-              <!-- Menú desplegable: Profecías -->
-              <li class="nav__items nav__dropdown">
-                <a href="profecias.html" class="nav__links">Profecías ▾</a>
-                <ul class="nav__submenu">
-                  <li><a href="profecias_daniel.html" class="nav__links">Profecías de Daniel</a></li>
-                  <li><a href="profecias_apocalipsis.html" class="nav__links">Profecías del Apocalipsis</a></li>
-                  <li><a href="eventos_finales.html" class="nav__links">Los Eventos Finales</a></li>
-                </ul>
-              </li>
-              <!-- Opción: Recursos -->
+          <!-- LOGO -->
+          <div class="nav__logo">
+            <a href="index.html">
+              <img src="./images/la-luz-de-la-verdad-high-resolution-logo-transparent (6).png" alt="La Luz de la Verdad" class="nav__logo-img">
+            </a>
+          </div>
       
-              
-              <li class="nav__items">
-                <a href="recursos.html" class="nav__links">Recursos</a>
-              </li>
+          <!-- MENÚ HAMBURGUESA -->
+          <div class="nav__menu" id="navToggle">
+            <span style="font-size: 30px; color: #0d1d3e;">☰</span>
+          </div>
       
-              <img src="./images/close.svg" class="nav__close" id="navClose" alt="Cerrar menú">
-            </ul>
-        
-            <!-- Menú hamburguesa para móvil -->
-            <div class="nav__menu" id="navToggle">
-                <span style="font-size: 30px; color: #0d1d3e;">☰</span>
-              </div>
-              
-          </nav>
-          <div class="nav__overlay" id="navOverlay"></div>
-
+          <!-- ENLACES DE NAVEGACIÓN -->
+          <ul class="nav__link nav__link--menu" id="navMenu">
+            <li class="nav__items">
+              <a href="index.html" class="nav__links">Inicio</a>
+            </li>
+      
+            <!-- Fe y Ciencia -->
+            <li class="nav__items nav__dropdown">
+              <a href="fe_y_ciencia.html" class="nav__links">Fe y Ciencia ▾</a>
+              <ul class="nav__submenu">
+                <li><a href="creacion_fe_y_ciencia.html" class="nav__links">¿Creación o Evolución?</a></li>
+                <li><a href="evidencias_diluvio.html" class="nav__links">Evidencias del Diluvio</a></li>
+                <li><a href="biblia_dinosaurios.html" class="nav__links">La Biblia y los Dinosaurios</a></li>
+                <li><a href="historicidad_biblia.html" class="nav__links">La Historicidad de la Biblia</a></li>
+              </ul>
+            </li>
+      
+            <!-- Doctrinas -->
+            <li class="nav__items nav__dropdown">
+              <a href="doctrinas.html" class="nav__links">Doctrinas ▾</a>
+              <ul class="nav__submenu">
+                <li><a href="justificacion_fe.html" class="nav__links">Justificación por la Fe</a></li>
+                <li><a href="deidad.html" class="nav__links">La Deidad</a></li>
+                <li><a href="ley_de_dios.html" class="nav__links">La Ley de Dios</a></li>
+                <li><a href="estado_muertos.html" class="nav__links">El Estado de los Muertos</a></li>
+                <li><a href="santuario.html" class="nav__links">El Santuario</a></li>
+                <li><a href="reforma_prosalud.html" class="nav__links">Reforma Prosalud</a></li>
+                <li><a href="espiritu_profecia.html" class="nav__links">El Espíritu de Profecía</a></li>
+              </ul>
+            </li>
+      
+            <!-- Profecías -->
+            <li class="nav__items nav__dropdown">
+              <a href="Profecias.html" class="nav__links">Profecías ▾</a>
+              <ul class="nav__submenu">
+                <li><a href="profecias_daniel.html" class="nav__links">Profecías de Daniel</a></li>
+                <li><a href="profecias_apocalipsis.html" class="nav__links">Profecías del Apocalipsis</a></li>
+                <li><a href="eventos_finales.html" class="nav__links">Los Eventos Finales</a></li>
+              </ul>
+            </li>
+      
+            <!-- Recursos -->
+            <li class="nav__items">
+              <a href="recursos.html" class="nav__links">Recursos</a>
+            </li>
+      
+            <!-- BOTÓN DE CIERRE -->
+            <img src="./images/close.svg" class="nav__close" id="navClose" alt="Cerrar menú">
+          </ul>
+        </nav>
+      
+        <!-- SECCIÓN HERO -->
         <section class="hero__container_inicio">
-            <h1 class="hero__title">Luz en un mundo en oscuridad</h1>
-            <p class="hero__paragraph">
-              Después de esto vi a otro ángel descender del cielo con gran poder; y la tierra fue alumbrada con su gloria. Apocalipsis 18:1
-            </p>       
-          </section>
-          
-    </header>
+          <h1 class="hero__title">Luz en un mundo en oscuridad</h1>
+          <p class="hero__paragraph">
+            Después de esto vi a otro ángel descender del cielo con gran poder; y la tierra fue alumbrada con su gloria. Apocalipsis 18:1
+          </p>
+        </section>
+      </header>
+      
 
     <main>
+        <div class="element"></div>
 
         <section>     
             <div class="trending-section">
@@ -212,8 +211,8 @@
                   class="footer__img" 
                   alt="Facebook">
           </a>
-          <a href="https://www.youtube.com/tucanal" class="footer__icons" target="_blank" aria-label="YouTube">
-              <img 
+          <a href="https://www.youtube.com/tucanal" class="footer__icons" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+            <img 
                   src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" 
                   class="footer__img" 
                   alt="YouTube">
@@ -236,6 +235,8 @@
 
     <!-- Scripts -->
     <script>
+
+        
   const navMenu = document.getElementById("navMenu");
   const navToggle = document.getElementById("navToggle");
   const navClose = document.getElementById("navClose");
