@@ -211,52 +211,7 @@
   </footer>
 
   <!-- Scripts -->
-  <script>
-    
-// Seleccionamos elementos importantes
-const navMenu = document.querySelector('.nav__link');
-const navToggle = document.querySelector('.nav__menu');
-const navClose = document.querySelector('.nav__close');
-const navItemsWithSubmenu = document.querySelectorAll('.nav__items');
 
-// Abrir menú al hacer click en hamburguesa
-if (navToggle) {
-  navToggle.addEventListener('click', () => {
-    navMenu.classList.add('nav__link--show');
-  });
-}
-
-// Cerrar menú al hacer click en icono de cerrar
-if (navClose) {
-  navClose.addEventListener('click', () => {
-    navMenu.classList.remove('nav__link--show');
-    // Además cerramos cualquier submenú activo
-    navItemsWithSubmenu.forEach(item => item.classList.remove('active'));
-  });
-}
-
-// Abrir/cerrar submenú en móvil al hacer click en el item padre
-navItemsWithSubmenu.forEach(item => {
-  // Solo para los que tienen submenu
-  if (item.querySelector('.nav__submenu')) {
-    item.addEventListener('click', e => {
-      e.preventDefault();  // evitar que el link navegue
-      
-      // Si ya está activo, lo cierra; sino lo abre
-      const isActive = item.classList.contains('active');
-      
-      // Cerrar todos los submenús antes
-      navItemsWithSubmenu.forEach(i => i.classList.remove('active'));
-      
-      if (!isActive) {
-        item.classList.add('active');
-      }
-    });
-  }
-});
-
-
-  </script>
 
   <script src="./js/slider.js"></script>
   <script src="./js/questions.js"></script>

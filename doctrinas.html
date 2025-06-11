@@ -24,11 +24,17 @@
           </a>
         </div>
     
-        <ul class="nav__link nav__link--menu">
-          <li class="nav__items">
-            <a href="index.html" class="nav__links">Inicio</a>
-          </li>
-    
+    <!-- MENÚ HAMBURGUESA -->
+          <div class="nav__menu" id="navToggle">
+            <span style="font-size: 30px; color: #0d1d3e;">☰</span>
+          </div>
+      
+          <!-- ENLACES DE NAVEGACIÓN -->
+          <ul class="nav__link nav__link--menu" id="navMenu">
+            <li class="nav__items">
+              <a href="index.html" class="nav__links">Inicio</a>
+            </li>
+      
           <!-- Menú desplegable: Fe y Ciencia -->
           <li class="nav__items nav__dropdown">
             <a href="fe_y_ciencia.html" class="nav__links">Fe y Ciencia ▾</a>
@@ -63,20 +69,16 @@
               <li><a href="eventos_finales.html" class="nav__links">Los Eventos Finales</a></li>
             </ul>
           </li>
-    
-          <!-- Opción: Recursos -->
-          <li class="nav__items">
-            <a href="recursos.html" class="nav__links">Recursos</a>
-          </li>
-    
-          <img src="./images/close.svg" class="nav__close">
-        </ul>
-    
-        <!-- Menú hamburguesa para móvil -->
-        <div class="nav__menu">
-          <span style="font-size: 30px; color: #0d1d3e;">☰</span>
-        </div>
-      </nav>
+    <!-- Recursos -->
+            <li class="nav__items">
+              <a href="recursos.html" class="nav__links">Recursos</a>
+            </li>
+      
+            <!-- BOTÓN DE CIERRE -->
+            <img src="./images/close.svg" class="nav__close" id="navClose" alt="Cerrar menú">
+          </ul>
+        </nav>
+
 
         <section class="hero__container_doctrinas">
             <h1 class="hero__title">Defendiendo la sana doctrina</h1>

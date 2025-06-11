@@ -78,12 +78,20 @@
           </ul>
         </nav>
       
-        <!-- SECCIÓN HERO -->
-        <section class="hero__container_inicio">
-          <h1 class="hero__title">Luz en un mundo en oscuridad</h1>
-          <p class="hero__paragraph">
-            Después de esto vi a otro ángel descender del cielo con gran poder; y la tierra fue alumbrada con su gloria. Apocalipsis 18:1
-          </p>
+        <!-- SECCIÓN HERO -->         
+<section class="hero__container_inicio">
+  <video autoplay muted loop playsinline class="hero__video">
+    <source src="./images/Los 5 mejores lugares de Suiza - Paisajes hermosos  4K Ultra HD.mp4" type="video/mp4">
+    Tu navegador no soporta videos HTML5.
+  </video>
+
+  <!-- Texto encima del video -->
+  <div class="hero__container">
+    <h1 class="hero__title">Tu título impactante</h1>
+    <p class="hero__paragraph">Tu mensaje o descripción llamativa</p>
+  </div>
+</section>
+
         </section>
       </header>
       
@@ -234,77 +242,7 @@
 
 
     <!-- Scripts -->
-    <script>
-
-        
-  const navMenu = document.getElementById("navMenu");
-  const navToggle = document.getElementById("navToggle");
-  const navClose = document.getElementById("navClose");
-  const navOverlay = document.getElementById("navOverlay");
-
-  // Abrir menú
-  navToggle.addEventListener("click", () => {
-    navMenu.classList.add("nav__link--show");
-    navOverlay.classList.add("nav__overlay--show");
-  });
-
-  // Cerrar menú (por botón cerrar)
-  navClose.addEventListener("click", () => {
-    navMenu.classList.remove("nav__link--show");
-    navOverlay.classList.remove("nav__overlay--show");
-  });
-
-  // Cerrar menú (haciendo clic en el overlay)
-  navOverlay.addEventListener("click", () => {
-    navMenu.classList.remove("nav__link--show");
-    navOverlay.classList.remove("nav__overlay--show");
-  });
-
-
-     document.addEventListener("DOMContentLoaded", function () {
-    const videoList = document.querySelector("#carousel");
-    const cards = document.querySelectorAll(".video-card");
-
-    // Clonamos los primeros artículos para un desplazamiento sin huecos
-    const totalVisible = Math.floor(videoList.offsetWidth / cards[0].offsetWidth);
-    for (let i = 0; i < totalVisible; i++) {
-        let clone = cards[i].cloneNode(true);
-        videoList.appendChild(clone);
-    }
-
-    let index = 0;
-    const cardWidth = cards[0].offsetWidth;
-    let isTransitioning = false;
-
-    function slideNext() {
-        if (isTransitioning) return;
-        isTransitioning = true;
-        index++;
-
-        videoList.style.transition = "transform 0.5s ease-in-out";
-        videoList.style.transform = `translateX(-${index * cardWidth}px)`;
-
-        // Cuando llegamos al final, reiniciamos sin animación
-        setTimeout(() => {
-            if (index >= cards.length) {
-                index = 0;
-                videoList.style.transition = "none";
-                videoList.style.transform = "translateX(0)";
-            }
-            isTransitioning = false;
-        }, 500);
-    }
-
-    setInterval(slideNext, 4000); // Cambia cada 4 segundos
-});
-document.addEventListener("DOMContentLoaded", () => {
-  const heroTitle = document.querySelector(".hero__container_inicio .hero__title");
-  const heroParagraph = document.querySelector(".hero__container_inicio .hero__paragraph");
-
-  heroTitle.classList.add("active");
-  heroParagraph.classList.add("active");
-});
-  </script>
+    
   
     <script src="./js/slider.js"></script>
     <script src="./js/questions.js"></script>
